@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9f6e7 25%, #a2d5ab 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #3c8c3a; /* Darker green */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #2e662c; /* Darker green */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a2d5ab; /* Lighter green */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #3c8c3a; /* Darker green */
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3c8c3a; /* Darker green */
+}
+
+footer {
+    background-color: #3c8c3a; /* Darker green */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Adjust this value for the desired size */
+    max-height: 150px; /* Ensures the image scales proportionally */
+    border-radius: 15px; /* Curved square frame */
+    border: 2px solid #3c8c3a; /* Darker green */
+}
+
+/* Page Transition Animation */
+#page-wrapper {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
